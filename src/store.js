@@ -1,5 +1,7 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-  cartItems: 0
+  posts: [],
+  postDay: 0,
+
 })
