@@ -17,12 +17,6 @@ export default {
         return {
             store
         }
-    },
-    methods: {
-
-    },
-    mounted() {
-        console.log(this.store.postDay)
     }
 }
 </script>

@@ -11,7 +11,7 @@
 
 <script>
 import importPosts from '../assets/posts.json'
-import {store} from '../store'
+import { store } from '../store'
 export default {
     data() {
         return {
@@ -21,10 +21,14 @@ export default {
     },
     methods: {
         takeAllPost() {
-            for(let i = 0; i < importPosts.days.length; i++) {
-                const post = importPosts.days[i]
-                this.store.posts.push(post)
-                
+            if (this.store.posts.length === 0) {
+                for (let i = 0; i < importPosts.days.length; i++) {
+                    const post = importPosts.days[i]
+
+                    this.store.posts.push(post)
+
+
+                }
             }
         },
         takePostDay(i) {
