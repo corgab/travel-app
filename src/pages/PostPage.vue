@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>ciao</h1>
         <AppPost :post="store.posts[store.postDay]"></AppPost>
     </div>
 </template>

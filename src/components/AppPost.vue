@@ -1,8 +1,8 @@
 <template>
     <RouterLink class="link" :to="'/' + post.day"></RouterLink>
     <div>
-        <h4 class="text-center">{{ post.name }}</h4>
-        <img v-if="post.thumb !== null" class="mt-3" :src="post.thumb" alt="Foto Vacanza">
+        <h4 class="text-center">{{ post.title }}</h4>
+        <img v-if="post.thumb !== null" class="img-fluid" :src="post.thumb" alt="Foto Vacanza">
         <h6 class="fw-light">{{ post.subtitle }}</h6>
         <p>{{ post.description }}</p>
         <h6 class="fw-light">{{ post.dailyJournal }}</h6>

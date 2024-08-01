@@ -27,7 +27,6 @@ export default {
 
                     this.store.posts.push(post)
 
-
                 }
             }
         },

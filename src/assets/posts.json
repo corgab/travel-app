@@ -5,7 +5,7 @@
       "day": 1,
       "title": "Giorno 1: Benvenuti a Parigi!",
       "subtitle": "Il viaggio verso una nuova avventura",
-      "thumb": "Foto dell'aereo, del treno o della vista dall'auto durante il viaggio.",
+      "thumb": "/public/img/aereo.jpg",
       "description": "Racconta l'esperienza del viaggio verso Parigi, le prime impressioni appena arrivati, e la sistemazione in hotel o alloggio.",
       "dailyJournal": "Descrizione dettagliata delle attività svolte durante la giornata, le emozioni provate e le prime scoperte."
     },
@@ -13,7 +13,7 @@
       "day": 2,
       "title": "Giorno 2: Alla Scoperta del Cuore di Parigi",
       "subtitle": "Tra monumenti e mercatini locali",
-      "thumb": "Foto di un punto di riferimento famoso o di una piazza centrale.",
+      "thumb": "/public/img/citta.jpg",
       "description": "Esplora i principali punti di interesse della città, parla dei monumenti visitati, delle strade caratteristiche, e magari di qualche mercatino locale.",
       "dailyJournal": "Dettagli su monumenti, mercatini e passeggiate per la città."
     },
@@ -21,7 +21,7 @@
       "day": 3,
       "title": "Giorno 3: Immergendosi nella Cultura di Parigi",
       "subtitle": "Musei, gallerie d'arte e teatri",
-      "thumb": "Foto di un museo o di un'opera d'arte locale.",
+      "thumb": "/public/img/museo.jpg",
       "description": "Visita musei, gallerie d'arte e teatri, e racconta le tue esperienze e ciò che ti ha colpito di più.",
       "dailyJournal": "Descrizione dettagliata delle attività culturali svolte durante la giornata, le emozioni provate e le scoperte artistiche."
     },
@@ -29,14 +29,14 @@
       "day": 4,
       "title": "Giorno 4: Alla Scoperta della Natura di Parigi",
       "subtitle": "Escursioni, parchi e panorami mozzafiato",
-      "thumb": "Foto di un panorama naturale, un parco o un sentiero escursionistico.",
+      "thumb": "/public/img/panorama.jpg",
       "description": "Descrivi una giornata immersa nella natura, tra escursioni, parchi naturali e viste panoramiche.",
       "dailyJournal": "Dettagli su escursioni, parchi visitati e panorami osservati, con le emozioni provate e le scoperte naturalistiche."
     },
     {
       "day": 5,
       "title": "Giorno 5: Un Viaggio nel Gusto di Parigi",
-      "subtitle": "Assaporando le delizie locali",
+      "subtitle": "/public/img/cibo.jpg",
       "thumb": "Foto di un piatto tipico o di un mercato alimentare locale.",
       "description": "Racconta le tue esperienze culinarie, i piatti tipici assaggiati, e le tradizioni gastronomiche del luogo.",
       "dailyJournal": "Descrizione dettagliata delle esperienze culinarie, con le emozioni provate e i sapori scoperti."
@@ -45,7 +45,7 @@
       "day": 6,
       "title": "Giorno 6: Un'Avventura Fuori dalla Città",
       "subtitle": "Esplorando i dintorni di Parigi",
-      "thumb": "Foto di un villaggio vicino, un'attrazione naturale o storica fuori città.",
+      "thumb": "/public/img/dintorni.jpg",
       "description": "Descrivi una gita fuori città, le attrazioni visitate e le bellezze scoperte nei dintorni.",
       "dailyJournal": "Dettagli sulla gita fuori città, con le emozioni provate e le scoperte fatte."
     },
@@ -53,7 +53,7 @@
       "day": 7,
       "title": "Giorno 7: Una Giornata di Relax a Parigi",
       "subtitle": "Spa, spiaggia e momenti di tranquillità",
-      "thumb": "Foto di una spa, una piscina o una spiaggia.",
+      "thumb": "/public/img/spa.jpg",
       "description": "Racconta una giornata dedicata al relax e al benessere, tra spa, spiagge o semplici momenti di tranquillità.",
       "dailyJournal": "Descrizione dettagliata della giornata di relax, con le emozioni provate e le attività di benessere svolte."
     },
@@ -61,7 +61,7 @@
       "day": 8,
       "title": "Giorno 8: Shopping e Ricordi di Parigi",
       "subtitle": "Alla ricerca del souvenir perfetto",
-      "thumb": "Foto di un negozio di souvenir o un mercato locale.",
+      "thumb": "/public/img/negozio.jpg",
       "description": "Parla della tua esperienza di shopping, i souvenir acquistati e i luoghi migliori per fare acquisti.",
       "dailyJournal": "Dettagli sull'esperienza di shopping, con le emozioni provate e i souvenir trovati."
     },
@@ -69,7 +69,7 @@
       "day": 9,
       "title": "Giorno 9: Scoprendo la Vita Notturna di Parigi",
       "subtitle": "Bar, locali e divertimento serale",
-      "thumb": "Foto di un bar, un locale notturno o una piazza animata di sera.",
+      "thumb": "/public/img/sera.jpg",
       "description": "Racconta la tua esperienza della vita notturna locale, i migliori bar, locali e cosa fare di sera in città.",
       "dailyJournal": "Descrizione dettagliata della serata trascorsa, con le emozioni provate e i luoghi visitati."
     },
@@ -77,7 +77,7 @@
       "day": 10,
       "title": "Giorno 10: Arrivederci Parigi!",
       "subtitle": "Riflessioni su un viaggio indimenticabile",
-      "thumb": "Foto dell'ultima vista sulla città, dell'aeroporto o della stazione.",
+      "thumb": "/public/img/ritorno.jpg",
       "description": "Concludi il tuo diario di viaggio con riflessioni sul viaggio, i momenti più belli e un saluto alla destinazione.",
       "dailyJournal": "Dettagli sulla giornata finale, con le emozioni provate e le riflessioni sull'intero viaggio."
     }
