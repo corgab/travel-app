@@ -5,6 +5,8 @@
 <script>
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 export default {
     name: 'Map',
@@ -26,13 +28,19 @@ export default {
                 attribution: '&copy; el mejo'
             }).addTo(map);
 
+            // Imposta manualmente l'icona del marker
+            const defaultIcon = L.icon({
+                iconUrl: markerIcon,
+                shadowUrl: markerShadow
+            });
+
             // Se ci sono coordinate, centrare la mappa
             if (this.locations.length) {
                 const bounds = L.latLngBounds(this.locations.map(loc => [loc.latitude, loc.longitude]));
                 map.fitBounds(bounds);
 
                 this.locations.forEach(location => {
-                    L.marker([location.latitude, location.longitude]).addTo(map)
+                    L.marker([location.latitude, location.longitude], {icon: defaultIcon}).addTo(map)
                         .bindPopup(location.popup)
                         .openPopup();
                 });
@@ -45,5 +53,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
