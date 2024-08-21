@@ -24,4 +24,9 @@ export default {
 
 </template>
 
-<style></style>
+<style scoped>
+
+a {
+  text-decoration: none;
+}
+</style>

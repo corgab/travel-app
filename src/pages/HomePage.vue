@@ -1,14 +1,15 @@
 <template>
-    <div class="text-center text-md-start">
-        <h1 class="my-2">{{ titlePost }}</h1>
-        <ul>
-            <li v-for="(post, i) in store.posts" :key="i" @click="handlePostClick(i)" class="py-2">
-                <!-- Non usiamo RouterLink direttamente qui -->
-                <a href="#" @click.stop="handlePostClick(i)">
-                    <span class="h6">Giorno {{ post.day }}:</span> {{ post.title }}
-                </a>
-            </li>
-        </ul>
+    <div class="container">
+        <div class="text-center text-md-start">
+            <h1 class="my-4">{{ titlePost }}</h1>
+            <ul>
+                <li v-for="(post, i) in store.posts" :key="i" class="py-2">
+                    <a href="#" :class="{ 'text-muted': isClicked(post.day) }" @click.stop="handlePostClick(i)">
+                        <span class="h6">Giorno {{ post.day }}:</span> {{ post.title }}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -20,7 +21,8 @@ export default {
     data() {
         return {
             store,
-            titlePost: importPosts.tripTitle
+            titlePost: importPosts.tripTitle,
+            clickedLinks: JSON.parse(localStorage.getItem('clickedLinks')) || []
         }
     },
     methods: {
@@ -36,6 +38,8 @@ export default {
             const selectedPost = this.store.posts[i];
             if (selectedPost) {
                 localStorage.setItem('post', JSON.stringify(selectedPost));
+                this.clickedLinks.push(selectedPost.day);
+                localStorage.setItem('clickedLinks', JSON.stringify(this.clickedLinks));
             } else {
                 console.error("Errore: Post non trovato all'indice", i);
             }
@@ -43,11 +47,14 @@ export default {
         handlePostClick(i) {
             this.takePostDay(i);
 
-            // Imposta un timer
+            // Timer
             setTimeout(() => {
-                // Naviga alla pagina del post
                 this.$router.push(`/${this.store.posts[i].day}`);
-            }, 500); // Ritardo
+            }, 500);
+        },
+        isClicked(day) {
+            // Controlla se il giorno è già presente nell'array dei link cliccati
+            return this.clickedLinks.includes(day);
         }
     },
     mounted() {
@@ -60,10 +67,5 @@ export default {
 li,
 ul {
     list-style: none;
-}
-
-a {
-    // text-decoration: none;
-    // color: currentColor;
 }
 </style>
