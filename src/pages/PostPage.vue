@@ -1,6 +1,6 @@
 <template>
     <div class="container my-4 text-center">
-        <AppPost :post="currentPost"></AppPost>
+        <AppPost :post="currentPost" />
     </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
         };
     },
     mounted() {
-        // Recupera post da localStorage
+        // Recupera il post da localStorage
         const savedPost = JSON.parse(localStorage.getItem('post'));
         if (savedPost) {
             this.currentPost = savedPost;
@@ -29,5 +29,5 @@ export default {
         // Rimozione post
         localStorage.removeItem('post');
     }
-    }
+}
 </script>
