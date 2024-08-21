@@ -1,23 +1,33 @@
 <template>
     <div class="container my-4 text-center">
-        <AppPost :post="store.posts[store.postDay]"></AppPost>
+        <AppPost :post="currentPost"></AppPost>
     </div>
 </template>
 
 <script>
 import AppPost from "../components/AppPost.vue";
-import {store} from "../store.js"
+
 export default {
     components: {
-        store,
         AppPost
     },
     data() {
         return {
-            store
+            currentPost: null
+        };
+    },
+    mounted() {
+        // Recupera post da localStorage
+        const savedPost = JSON.parse(localStorage.getItem('post'));
+        if (savedPost) {
+            this.currentPost = savedPost;
+        } else {
+            console.error("Errore: Nessun post trovato in localStorage.");
         }
+    },
+    unmounted() {
+        // Rimozione post
+        localStorage.removeItem('post');
     }
-}
+    }
 </script>
-
-<style lang="scss" scoped></style>
