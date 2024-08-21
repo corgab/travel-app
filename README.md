@@ -27,5 +27,5 @@
 
 ## Tecnologie Utilizzate
 
-- **Frontend**: Vue
+- **Language**: Vue
 - **API**: Integrazione con API di terze parti per dati su viaggi e mappe
