@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container my-4 text-center">
         <AppPost :post="store.posts[store.postDay]"></AppPost>
     </div>
 </template>

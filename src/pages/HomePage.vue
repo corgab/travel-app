@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h1>{{ titlePost }}</h1>
+        <h1 class="my-2">{{ titlePost }}</h1>
         <ul>
-            <li v-for="(post, i) in store.posts" :key="i" @click="takePostDay(i)">
-                <RouterLink :to="'/' + post.day">{{ post.title }}</RouterLink>
+            <li v-for="(post, i) in store.posts" :key="i" @click="takePostDay(i)" class="py-2">
+                <RouterLink :to="'/' + post.day"><span class="h6">Giorno {{post.day}}:</span> {{ post.title }}</RouterLink>
             </li>
         </ul>
     </div>
@@ -41,4 +41,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+li, ul {
+    list-style: none;
+}
+
+a {
+
+    // DA SCEGLIERE
+    // text-decoration: none;
+    // color: currentColor;
+}
+
+</style>

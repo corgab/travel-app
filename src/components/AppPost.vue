@@ -4,8 +4,8 @@
         <h4 class="text-center">{{ post.title }}</h4>
         <img v-if="post.thumb !== null" class="img-fluid" :src="post.thumb" alt="Foto Vacanza">
         <h6 class="fw-light">{{ post.subtitle }}</h6>
-        <p>{{ post.description }}</p>
-        <h6 class="fw-light">{{ post.dailyJournal }}</h6>
+        <p class="fw-light">{{ post.description }}</p>
+        <h5 class="fw-light">{{ post.dailyJournal }}</h5>
     </div>
 </template>
 
@@ -20,4 +20,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+img {
+    width: 500px;
+}
+
+</style>
