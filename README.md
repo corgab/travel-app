@@ -1,7 +1,31 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Travel App
 
-## Recommended IDE Setup
+## Funzionalità
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- **Esplora Attività**: Scopri attività e attrazioni locali nelle tue destinazioni preferite.
+- **Salva Itinerari**: Salva e gestisci i tuoi itinerari di viaggio in un'unica posizione.
+
+## Installazione
+
+1. Clona il repository:
+   ```bash
+   git clone https://github.com/corgab/travel-app.git
+   ```
+2. Naviga nella directory del progetto:
+   ```bash
+   cd travel-app
+   ```
+3. Installa le dipendenze:
+   ```bash
+   npm install
+   ```
+4. Avvia l'applicazione:
+   ```bash
+   npm run dev
+   ```
+
+## Tecnologie Utilizzate
+
+- **Frontend**: Vue
+- **API**: Integrazione con API di terze parti per dati su viaggi e mappe
