@@ -16,7 +16,7 @@ export default {
   <header>
     <section class="bg-dark">
       <div class="container py-5 text-white d-flex justify-content-between align-items-center">
-        <h2>Gigetti Viaggi</h2>
+        <a href="/" class="h2">Gigetti Viaggi</a>
         <h6>la miglior Agenzia Viaggi</h6>
       </div>
     </section>
