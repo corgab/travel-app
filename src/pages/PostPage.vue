@@ -1,6 +1,9 @@
 <template>
     <div class="container my-4 text-center">
         <AppPost :post="currentPost" />
+        <div class="text-start my-4">
+            <a href="/" class="btn btn-primary">Torna alla home</a>
+        </div>
     </div>
 </template>
 
