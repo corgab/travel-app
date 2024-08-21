@@ -7,7 +7,7 @@
             <p class="fw-light fs-4 lh-base py-3">{{ post.description }}</p>
             <p class="fw-light fs-5">{{ post.dailyJournal }}</p>
             <div>
-                <!-- Passa le coordinate al componente Map -->
+                <!-- Passa le coordinate -->
                 <Map :locations="getLocations()" />
             </div>
         </div>

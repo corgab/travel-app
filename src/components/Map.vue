@@ -21,12 +21,12 @@ export default {
         initMap() {
             const map = L.map('map');
 
-            // Aggiungi un layer con le mappe di OpenStreetMap
+            // Layer con le mappe di OpenStreetMap
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                attribution: '&copy; el mejo'
             }).addTo(map);
 
-            // Se ci sono coordinate, centrare la mappa su di esse
+            // Se ci sono coordinate, centrare la mappa
             if (this.locations.length) {
                 const bounds = L.latLngBounds(this.locations.map(loc => [loc.latitude, loc.longitude]));
                 map.fitBounds(bounds);
@@ -37,8 +37,8 @@ export default {
                         .openPopup();
                 });
             } else {
-                // Imposta una vista di default se non ci sono coordinate
-                map.setView([51.505, -0.09], 13);
+                // Vista di default se non ci sono coordinate
+                map.setView([74.505, -20.09], 13);
             }
         }
     }
@@ -46,5 +46,4 @@ export default {
 </script>
 
 <style scoped>
-/* Aggiungi eventuali stili personalizzati qui */
 </style>
